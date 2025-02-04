@@ -103,7 +103,7 @@ function App() {
                 })
 
               }} className={`bg-green-500 text-white font-bold p-2 rounded-md text-xl h-${agrandar}`} style={{ height: agrandar }}>
-                Si
+                Sim
               </button>
               <button
                 className="bg-red-500 text-white font-bold p-2 rounded-md text-xl"
