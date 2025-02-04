@@ -14,12 +14,12 @@ function App() {
 
   let random = [{
     id: 1,
-    description: "Di si por favor",
+    description: "Diga sim Por Favor",
     img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
   },
   {
     id: 1,
-    description: "Piénsalo de nuevo.",
+    description: "Pense dnv.",
     img: "https://i.pinimg.com/originals/77/6b/21/776b215bed3deeef47fd3aa657685a18.gif"
   }
     ,
@@ -30,12 +30,12 @@ function App() {
   },
   {
     id: 3,
-    description: "No tengas miedo, será genial.",
+    description: "Nao tenha medo, sera incrivel.",
     img: "https://i.pinimg.com/originals/e1/c3/88/e1c388133e0f998e25bb17c837b74a14.gif"
   },
   {
     id: 4,
-    description: "Confía en mí, será divertido.",
+    description: "Confia em mim vai ser incrivel.",
     img: "https://media.tenor.com/Bn88VELdNI8AAAAi/peach-goma.gif"
   },
   {
@@ -89,7 +89,7 @@ function App() {
       {
         !valueSi ? (
           <div className="p-5">
-            <h1 className="text-white font-bold text-5xl text-center">¿Quieres ser mi San Valentin?</h1>
+            <h1 className="text-white font-bold text-5xl text-center">A senhora aceitaria ser minha noiva?</h1>
             <img src={Object.keys(randomValor).length === 0 ?
               "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
             <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 items-center">
@@ -110,16 +110,16 @@ function App() {
                 onClick={randomResponse}
                 disabled={imagenCargada} // Deshabilita el botón si la imagen no se ha cargado
               >
-                {Object.keys(randomValor).length === 0 ? "No" : randomValor.description}
-                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "¿Quieres ser mi San Valentin?" : randomValor.description}</span>
+                {Object.keys(randomValor).length === 0 ? "Nao" : randomValor.description}
+                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "Quer ser minha noiva?" : randomValor.description}</span>
               </button>
             </div>
           </div>
         ) : (
           <div className="flex justify-center items-center flex-col space-y-10">
-            <h1 className="text-4xl text-white font-bold">Sabia que dirias que si ❤️!</h1>
+            <h1 className="text-4xl text-white font-bold">Sabia que vc diria sim ❤️!</h1>
             <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="" className="mx-auto" />
-            <span hidden>{document.title = 'Sabia que dirias que si ❤️!'}</span>
+            <span hidden>{document.title = 'Sabia que diria sim❤️!'}</span>
           </div>
         )
       }
